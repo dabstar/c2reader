@@ -1,7 +1,29 @@
-doctype 5
+!!! 5
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='/css/bootstrap.min.css')
   body
-    block content
+    div.navbar.navbar-inverse.navbar-fixed-top
+      div.navbar-inner
+        div.container          
+            a(href='#').brand C2 Reader     
+            ul.nav
+                li.active
+                  a(href='/') Home                
+                li
+                  a(href='/About') About
+      div.container
+        div.row-fluid
+          div.span3
+            div.well.sidebar-nav
+              h2 Menu
+            
+          div.span9
+            div
+              h2 Secondary Content
+              block content
+    
+    div.footer 
+      p &copy; nodeblox 2011
+    
