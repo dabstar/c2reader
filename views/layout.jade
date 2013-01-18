@@ -4,9 +4,9 @@ html
     title= title
     link(rel='stylesheet', href='/css/bootstrap.min.css')
   body
-    div.navbar.navbar-inverse.navbar-fixed-top
-      div.navbar-inner
-        div.container          
+      div.container          
+        div.navbar.navbar-inverse
+          div.navbar-inner
             a(href='#').brand C2 Reader     
             ul.nav
                 li.active
@@ -16,14 +16,16 @@ html
       div.container
         div.row-fluid
           div.span3
-            div.well.sidebar-nav
-              h2 Menu
-            
+            div.well
+              ul.nav.nav-list
+                li.nav-header Workouts
+                li.active: a(href='#') 8x500m/4:00r
+                li: a(href='#') 5x800m/2:00r
           div.span9
             div
               h2 Secondary Content
               block content
-    
-    div.footer 
-      p &copy; nodeblox 2011
+     
+        div.footer 
+          p &copy; dabstar 2012
     
