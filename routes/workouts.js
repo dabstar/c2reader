@@ -24,4 +24,4 @@ get = function(req, res){
 	res.type('application/vnd.workouts.workout+json');
 	res.send(200,dummyResponse);
 };
- 
+
